@@ -1,0 +1,28 @@
+/* nav styling */
+body {
+  display: block;
+}
+.favicon_image {
+  border-radius: 50%;
+}
+
+.nav-item {
+  margin-left: 5.5rem;
+}
+
+.logo_image {
+  width: 5rem;
+  border-radius: 25rem;
+}
+.navbar {
+  padding: 0% !important;
+}
+
+/* body styling*/
+
+/* footer styling*/
+footer {
+  text-align: center;
+  padding: 0px;
+  margin-top: 50%;
+}
