@@ -1,6 +1,20 @@
 /* nav styling */
 body {
-  display: block;
+  display: block
+}
+.navbar{
+  background-color: #22577E !important;
+}
+.nav_links li a{
+  color: rgb(190, 190, 190);
+}
+.nav_links li a:hover{
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+  border-bottom:solid 1px lightgray;
+}
+.nav_links li a:visited {
+  color: rgb(190, 190, 190);
 }
 .favicon_image {
   border-radius: 50%;
@@ -19,10 +33,29 @@ body {
 }
 
 /* body styling*/
+.mainpage{
+  margin-top: 4rem;
+}
+.intro_img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px
+}
+.intro_message{
+  display: block;
+}
+
 
 /* footer styling*/
 footer {
   text-align: center;
   padding: 0px;
   margin-top: 50%;
+  background-color: #22577E
+}
+.blog-footer{
+  color: rgb(190, 190, 190)
+}
+.main_footer{
+  margin-bottom: 0;
 }
