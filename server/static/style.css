@@ -1,6 +1,7 @@
 /* nav styling */
 body {
-  display: block
+  
+  font-family: 'IBM Plex Mono';
 }
 .navbar{
   background-color: #22577E !important;
@@ -30,6 +31,7 @@ body {
 }
 .navbar {
   padding: 0% !important;
+  font-weight: 800 !important;
 }
 
 /* body styling*/
@@ -43,14 +45,23 @@ body {
 }
 .intro_message{
   display: block;
+  text-align: center;
 }
+
+/* home styling*/
+.Gedanken{
+  text-align: center;
+  margin-top: 2rem ;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+
 
 
 /* footer styling*/
 footer {
   text-align: center;
-  padding: 0px;
-  margin-top: 50%;
   background-color: #22577E
 }
 .blog-footer{
@@ -58,4 +69,16 @@ footer {
 }
 .main_footer{
   margin-bottom: 0;
+}
+
+.footer-socials{
+  text-decoration: none;
+}
+
+.footer-img{
+  padding: 1rem 1rem;
+}
+
+.footer-img{
+  width: 3.5rem;
 }

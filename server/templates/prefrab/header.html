@@ -10,20 +10,29 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/x-icon"
-      href="Assets\images\favicon-32x32.ico"
+      href="{{url_for('static', filename='./Assets/images/favicon-32x32.ico') }}"
       class="favicon_image"
     />
-    <link rel="stylesheet" href="Styling\style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'style.css') }}"
+    />
     <title>Axa_on_Tour</title>
     <nav class="navbar navbar-expand-lg fixed">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img
             class="logo_image"
-            src="Assets\images\logo_icon.png"
+            src="{{ url_for('static', filename = './Assets/images/logo_icon.png') }}"
             alt="Axa_on_Tour.image"
         /></a>
         <button
@@ -43,7 +52,7 @@
             style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -55,9 +64,11 @@
                 >Blog</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">...</a></li>
-                <li><a class="dropdown-item" href="#">...</a></li>
-                <li><a class="dropdown-item" href="#">...</a></li>
+                <li><a class="dropdown-item" href="ich">Wer ich bin</a></li>
+                <li><a class="dropdown-item" href="gsx600f">GSX600F</a></li>
+                <li>
+                  <a class="dropdown-item" href="mt09tracer">MT09 Tracer</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -96,41 +107,4 @@
       </div>
     </nav>
   </head>
-  <body class="bg-light">
-    <div class="container mainpage">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <img
-            class="intro_img"
-            src="Assets\images\ich_sauerland.jpg"
-            alt="ich_sauerland"
-            
-          />
-        </div>
-        <div class="intro_message col-lg-6 col-md-12 col-sm-12">
-          </br>
-          <p>Hey zusammen,
-          </br>mein Name ist Dirk und ich bin 39 Jahre alt. Geboren im Herzen des Ruhrgebiets lebe ich aktuell im Kreis Coesfeld. 
-          </br>
-          </br>Ich bin der Vater von 4 Kindern und Vollzeit Berufstätig. Ich habe zu meinem B Führerschein den Motorrad Führerschein 2011 nachgeholt und hatte das große Glück, dass ein guter Freund mich komplett Unterstützt. Bei jeglichen technischen Herausforderungen meiner bisherigen Maschinen, begleitete er mich mit Tat und Rat. Ich habe zwar keine 2 Linken Hände, bin jedoch dennoch vorsichtig und begegne der ganzen Technik mit Respekt. Durch seine Unterstützung habe ich eine alte und zudem Zeitpunkt "schlecht gepflegte" GSX600F zu meinem ersten Motorrad gemacht. Dies war für mich eine riesen Erfahrung für die ersten Jahre. Mit Ihr lernte ich Probleme zu lösen, aufs Bike zu hören, zu verstehen wie was funktioniert und in einander greift, aber natürlich auch mehr und mehr das Fahren an sich zu genießen.
-          </br>
-          </br>Ich merkte aber schnell, dass das hier und da rum fahren nicht reichte und schaue immer mehr nach vorne. So plante ich bereits schnell kleine Touren und macht meist den Vorturner für andere. Alles in allem stört es mich nicht und es freut mich am Ende einer Tour zu hören, dass es andere genauso empfanden wie auch ich.</p>
-        </div>
-      </div>
-    </div>
-    <footer class="blog-footer">
-      <p>
-        Blog in Zusammenarbeit erstellt mit Damilare
-        <a href="https://damilaref.dev/"> Dare BOBO</a>
-      </p>
-      <p class="main_footer">
-        <a href="#">Zurück nach Oben</a>
-      </p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
