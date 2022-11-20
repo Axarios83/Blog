@@ -101,10 +101,15 @@ footer {
 
 .blog-image-big{
   width: 100%;
+  max-height: fit-content;
 }
 
 .blog-header{
   margin-bottom:2rem;
+}
+
+.blog-text-center{
+  text-align: center;
 }
 
 
@@ -112,4 +117,8 @@ footer {
 /* Prefabs */
 .small-margin-top{
   margin-top: 2rem;
+}
+
+.small-margin-bottom{
+  margin-bottom: 2rem;
 }
