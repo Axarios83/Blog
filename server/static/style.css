@@ -3,6 +3,10 @@ body {
   
   font-family: 'IBM Plex Mono';
   line-height: 1.7;
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .navbar{
   background-color: #22577E !important;
@@ -63,7 +67,9 @@ body {
 /* footer styling*/
 footer {
   text-align: center;
-  background-color: #22577E
+  background-color: #22577E;
+  bottom: 0;
+  display: block;
 }
 .blog-footer{
   color: rgb(190, 190, 190)
