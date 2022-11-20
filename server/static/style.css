@@ -2,6 +2,7 @@
 body {
   
   font-family: 'IBM Plex Mono';
+  line-height: 1.7;
 }
 .navbar{
   background-color: #22577E !important;
@@ -81,4 +82,28 @@ footer {
 
 .footer-img{
   width: 3.5rem;
+}
+
+/* Blog styling */
+
+.blog-image{
+  width: 50%;
+  border-radius: 5px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.blog-image-big{
+  width: 100%;
+}
+
+.blog-header{
+  margin-bottom:2rem;
+}
+
+
+
+/* Prefabs */
+.small-margin-top{
+  margin-top: 2rem;
 }
