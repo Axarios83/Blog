@@ -125,6 +125,16 @@ footer {
   width: 3.5rem;
 }
 
+.footer-link{
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.footer-link:hover{
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 /* Blog styling */
 
 .blog-image{
