@@ -62,7 +62,9 @@ body {
 .home-div{
   --bs-gutter-x:0 !important;
   margin: 1rem 0;
+  text-align: center;
 }
+
 .leftcolumn { 
   float: left;
   width: 75%;
@@ -75,6 +77,68 @@ body {
   width: 20%;
   padding-left: 20px;
 }
+
+.home-intro{
+  margin: 2rem 0 4rem 0;
+}
+
+.home-message{
+  text-align: left;
+}
+
+.home-heading{
+  margin-bottom: 1.5rem;
+}
+
+.home-subcribe{
+  margin-top: 2rem;
+}
+
+.subcribe-form{
+  justify-content: center;
+}
+
+.home-carosuel{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blogs-list{
+  margin-top: 2rem;
+}
+
+.blog-item{
+  border: 1px solid lightblue;
+}
+
+.home-invite{
+  margin-top: 3rem;
+}
+
+.invite-img{
+  border-radius: 15px;
+}
+
+.invite-img{
+  width: 50%;
+}
+
+.invite-message{
+  text-align: left;
+}
+
+.gb-button{
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  background-color: #22577E;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.gb-button:hover{
+  background-color: #aaa;
+}
+
 
 /* Fake image */
 .fakeimg {

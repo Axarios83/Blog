@@ -2,31 +2,183 @@
 <body class="bg-light column">
    <div class="row home-div">
       <div class="leftcolumn">
-         <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height: 200px">Image</div>
-            <p>Some text..</p>
-            <p>
-               Sunt in culpa qui officia deserunt mollit anim id est laborum
-               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-               labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-               nostrud exercitation ullamco.
+         <div class="home-intro">
+            <h1 class="home-heading">Axa_on_Tour</h1>
+            <p class="home-message">
+               Axa_on_Tour hopes to provide biking contents showcasing the
+               beauty of Germany beyond. We backpack and discover the hidden
+               beauties of Germany one trip at a time. You can subscribe to our
+               notification list, and we shall notify you when planning trips.
             </p>
+            <div class="home-subcribe">
+               <form class="row g-3 subcribe-form" method="post">
+                  <div class="col-auto">
+                     <input
+                        type="text"
+                        class="form-control"
+                        id="subcribe-firstName"
+                        placeholder="First Name"
+                     />
+                  </div>
+                  <div class="col-auto">
+                     <input
+                        type="email"
+                        class="form-control"
+                        id="subcribe-mail"
+                        placeholder="Email-Address"
+                     />
+                  </div>
+                  <div class="col-auto">
+                     <button type="submit" class="btn btn-primary mb-3">
+                        Get notified
+                     </button>
+                  </div>
+                  <p>
+                     We will not send you spams, and you can
+                     <a href="https://www.google.com">unsubscribe.</a>
+                  </p>
+               </form>
+            </div>
          </div>
-         <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height: 200px">Image</div>
-            <p>Some text..</p>
+
+         <!-- Home carousel -->
+         <div class="home-carosuel">
+            <div
+               id="carouselExampleIndicators"
+               class="carousel slide carousel-fade"
+               data-bs-ride="carousel"
+            >
+               <div class="carousel-indicators">
+                  <button
+                     type="button"
+                     data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide-to="0"
+                     class="active"
+                     aria-current="true"
+                     aria-label="Slide 1"
+                  ></button>
+                  <button
+                     type="button"
+                     data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide-to="1"
+                     aria-label="Slide 2"
+                  ></button>
+                  <button
+                     type="button"
+                     data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide-to="2"
+                     aria-label="Slide 3"
+                  ></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img
+                        src="https://cdn.tourradar.com/s3/tour/1500x800/153246_ea0c95aa.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                     />
+                  </div>
+                  <div class="carousel-item">
+                     <img
+                        src="https://enduro21.com/images/2022/november-2022/2023-ktm-690-enduro-r/466828_my23-ktm-690-enduro-r-statics-cat-b_my23_01-pictures.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                     />
+                  </div>
+                  <div class="carousel-item">
+                     <img
+                        src="https://thumbs.dreamstime.com/z/superbike-racing-motor-bike-corner-racing-motor-bike-corner-panned-shot-143098058.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                     />
+                  </div>
+               </div>
+               <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+               >
+                  <span
+                     class="carousel-control-prev-icon"
+                     aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+               >
+                  <span
+                     class="carousel-control-next-icon"
+                     aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+         </div>
+
+         <!-- Blogs Sections -->
+         <div class="blogs-list overflow-hidden text-center">
             <p>
-               Sunt in culpa qui officia deserunt mollit anim id est laborum
-               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-               labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-               nostrud exercitation ullamco.
+               You can find some tips on biking across Germany and blogs about
+               discovered routes.
             </p>
+            <div class="row gx-5 g-3">
+               <div class="col-lg-4">
+                  <div class="p-3 blog-item">Tour of Munster</div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="p-3 blog-item">Tour of Osnabruck</div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="p-3 blog-item">Tour of Cologne</div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="p-3 blog-item">Tour of Berlin</div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="p-3 blog-item">Tour of Munich</div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="p-3 blog-item">Tour of Dresden</div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Invite to Youtube -->
+         <div class="home-invite">
+            <div class="row">
+               <div class="col-lg-6">
+                  <img
+                     src="https://i.pinimg.com/originals/6f/81/31/6f8131ff83d746384f0362cf3219db82.jpg"
+                     class="invite-img"
+                     alt="..."
+                  />
+               </div>
+               <div class="col-lg-6">
+                  <h2 class="invite-header">Join me on Youtube</h2>
+                  <p class="invite-message">
+                     Every Monday we post a new video. We talk about German
+                     culture, how to do things in Germany, and share a fun story
+                     or two.
+                  </p>
+                  <a
+                     class="gb-button gb-button-a6e1f7db gb-button-text"
+                     href="https://www.youtube.com/channel/UCLZcxlLIOzCl4AUVV8ikCgQ?ucbcb=1"
+                     target="_blank"
+                     rel="noopener"
+                     data-lasso-id="18552"
+                     >Follow Me On Youtube</a
+                  >
+               </div>
+            </div>
          </div>
       </div>
+
+      <!-- Left Column -->
       <div class="rightcolumn">
          <div class="card">
             <h2>About Me</h2>
