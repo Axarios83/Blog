@@ -7,7 +7,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  box-sizing: border-box;
 }
+
+/* Nav bar styling */
 .navbar{
   background-color: #22577E !important;
 }
@@ -54,13 +57,109 @@ body {
 }
 
 /* home styling*/
-.Gedanken{
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.home-div{
+  --bs-gutter-x:0 !important;
+  margin: 1rem 0;
   text-align: center;
-  margin-top: 2rem ;
-  border: 1px solid black;
+}
+
+.leftcolumn { 
+  float: left;
+  width: 75%;
+  padding-left: 40px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%;
+  padding-left: 20px;
+}
+
+.home-intro{
+  margin: 2rem 0 4rem 0;
+}
+
+.home-message{
+  text-align: left;
+}
+
+.home-heading{
+  margin-bottom: 1.5rem;
+}
+
+.home-subcribe{
+  margin-top: 2rem;
+}
+
+.subcribe-form{
+  justify-content: center;
+}
+
+.home-carosuel{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blogs-list{
+  margin-top: 2rem;
+}
+
+.blog-item{
+  border: 1px solid lightblue;
+}
+
+.home-invite{
+  margin-top: 3rem;
+}
+
+.invite-img{
   border-radius: 15px;
 }
 
+.invite-img{
+  width: 50%;
+}
+
+.invite-message{
+  text-align: left;
+}
+
+.gb-button{
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  background-color: #22577E;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.gb-button:hover{
+  background-color: #aaa;
+}
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
@@ -88,6 +187,16 @@ footer {
 
 .footer-img{
   width: 3.5rem;
+}
+
+.footer-link{
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.footer-link:hover{
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 /* Blog styling */
@@ -121,4 +230,13 @@ footer {
 
 .small-margin-bottom{
   margin-bottom: 2rem;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding:20px;
+  }
 }
